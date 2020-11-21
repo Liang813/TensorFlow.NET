@@ -1,7 +1,5 @@
-from tensorflow import TensorShape
-from tensorflow.python.framework import tensor_shape
-
-tensorShape: TensorShape = tensor_shape.as_shape((None, 1, 2))
+import tensorflow as tf
+import numpy as np
 
 with tf.Session().as_default() as sess:
     input = tf.placeholder(tf.float64, shape=[None, 3, 3])
